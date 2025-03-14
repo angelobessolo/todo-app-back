@@ -27,7 +27,7 @@ async function bootstrap() {
   // Aumentar el tamaño máximo de la carga útil
   app.use(bodyParser.json({ limit: '50mb' }));  // Aquí puedes ajustar el límite (por ejemplo, 50mb)
 
-  const port = process.env.PORT || 3200;
+  const port = process.env.PORT || 3000;
   await app.listen(port);
   console.log(port);
 }

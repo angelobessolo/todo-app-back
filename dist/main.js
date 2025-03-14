@@ -20,7 +20,7 @@ async function bootstrap() {
     const document = swagger_1.SwaggerModule.createDocument(app, config);
     swagger_1.SwaggerModule.setup('api', app, document);
     app.use(bodyParser.json({ limit: '50mb' }));
-    const port = process.env.PORT || 3200;
+    const port = process.env.PORT || 3000;
     await app.listen(port);
     console.log(port);
 }
