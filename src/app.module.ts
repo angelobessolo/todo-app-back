@@ -30,7 +30,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       entities: [
         join(__dirname, '**', '*.entity.{ts,js}')
       ], 
-      synchronize: true,
+      synchronize: false,
       logging: false,
     }),   
     AuthModule, 
